@@ -1,7 +1,7 @@
 import axios from "axios";
-// import { useNavigate } from "react-router-dom"; // REMOVIDO: Hooks não podem ser usados aqui
+import "dotenv/config";
 
-const API_URL = "http://localhost:3000";
+const API_URL = process.env.API_URL;
 
 const api = axios.create({
   baseURL: API_URL,
